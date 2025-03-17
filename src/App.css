@@ -1,0 +1,75 @@
+body {
+  background-color: #FFFFFF;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-wrapper {
+  width: 1500px;
+  max-width: 100%; /* Ensures responsiveness */
+  padding: 0 20px; /* Adds padding for better spacing on mobile */
+}
+
+.border-top-flowers {
+  width: 100%;
+}
+
+.flowers-top {
+  width: 100%;
+  filter: brightness(0) grayscale(100);
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50%;
+  filter: brightness(0) grayscale(100);
+  filter: drop-shadow(2px 2px 1px black);
+}
+
+.message-container {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.content-container {
+  transform: translateY(-100px);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .sub-wrapper {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .logo-img {
+    width: 70%; /* Larger logo for mobile visibility */
+  }
+
+  .message-container {
+    font-size: 18px; /* Slightly smaller text for mobile comfort */
+  }
+
+  .content-container {
+    transform: translateY(0); /* Less aggressive offset for better layout */
+  }
+}
